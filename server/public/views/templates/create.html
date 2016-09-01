@@ -13,8 +13,13 @@
   <label for="city">City:</label>
   <input type="text" name="city" id="heroCity" ng-model="newHero.city" />
 
-  <label for="">Power:</label>
-  <input type="text" name="power" id="heroPower" ng-model="newHero.power" />
+  <!-- <label for="">Power:</label>
+  <input type="text" name="power" id="heroPower" ng-model="newHero.power" /> -->
+
+  <select>
+      <option value="">Choose a Power</option>
+      <option ng-repeat="power in powers" value="{{power.type}}" ng-model="newHero.power">{{power.display}}</option>
+    </select>
 
 </form>
 
