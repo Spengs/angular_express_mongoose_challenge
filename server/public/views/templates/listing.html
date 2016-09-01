@@ -1,0 +1,14 @@
+<h2>Hero List</h2>
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <div ng-repeat="hero in heroes">
+            <p>Alias: {{hero.alias}}<br />
+               First Name: {{hero.firstName}}<br />
+               Last Name: {{hero.lastName}}<br />
+               City: {{hero.city}} <br />
+               Power: {{hero.power}}</p>
+            <button ng-click="deleteHero()">Delete</button>
+        </div>
+    </div>
+</div>

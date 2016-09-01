@@ -1,0 +1,21 @@
+<h2>Add A Hero</h2>
+
+<form>
+  <label for="alias">Alias:</label>
+  <input type="text" name="alias" id="heroAlias" ng-model="newHero.alias" />
+
+  <label for="firstName">First Name:</label>
+  <input type="text" name="firstName" id="heroFirstName" ng-model="newHero.firstName" />
+
+  <label for="lastName">Last Name:</label>
+  <input type="text" name="lastName" id="heroLastName" ng-model="newHero.lastName" />
+
+  <label for="city">City:</label>
+  <input type="text" name="city" id="heroCity" ng-model="newHero.city" />
+
+  <label for="">Power:</label>
+  <input type="text" name="power" id="heroPower" ng-model="newHero.power" />
+
+</form>
+
+<button ng-click="submitHero()">Submit</button>
